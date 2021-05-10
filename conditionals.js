@@ -29,7 +29,7 @@ console.log("Now you're ready to go outside!");*/
 
 
 /////////////////////////////////////////////////////////////////////////////
-const temperature = -12;
+/*const temperature = -12;
 if (temperature < -40 || temperature > 40) {
     console.log("Maybe going outside isn't such a great idea…");
 }
@@ -40,4 +40,36 @@ if (temperature < -40 || temperature > 40) {
 let raining = null;
 if (!raining) {
     console.log("Leave your umbrella at home!");
+}*/
+
+
+
+
+/*const whichSchool = function(age) {
+
+    if (age < 13) {
+        console.log("Elementary School");
+    } else if (age < 19 && age >= 13) {
+        console.log("Secondary School");
+    } else {
+        console.log("Lighthouse Labs");
+    }
+    return 0;
 }
+
+whichSchool(15);*/
+
+
+const whichSchool = function(age) {
+    let school = "";
+    if (age < 13) {
+        school = "Elementary School";
+    } else if (age < 19 && age >= 13) {
+        school = "Secondary School";
+    } else {
+        school = "Lighthouse Labs";
+    }
+    return school;
+}
+
+console.log(whichSchool(15));
