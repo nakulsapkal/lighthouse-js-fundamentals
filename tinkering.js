@@ -425,3 +425,33 @@ while (x >= 0) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*function Biodata(name, age, weight) {
+    let bio = "My name is " + name + ", my age is " + age + " and my weight " + weight + ".";
+
+    return bio;
+}
+
+console.log(Biodata("Nakul", "31", -90));*/
+
+
+let stars = function(length) {
+    let lines = "";
+    for (let i = 1; i <= length; i++) {
+        lines += "* ";
+    }
+    lines += '\n';
+    return lines;
+}
+
+let print = "";
+let traingle = function(height) {
+    for (let i = 1; i <= height; i++) {
+        print += stars(i);
+    }
+    return print;
+}
+
+console.log(traingle(5));
