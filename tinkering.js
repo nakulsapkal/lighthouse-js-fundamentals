@@ -425,9 +425,6 @@ while (x >= 0) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 /*function Biodata(name, age, weight) {
     let bio = "My name is " + name + ", my age is " + age + " and my weight " + weight + ".";
 
@@ -437,7 +434,14 @@ while (x >= 0) {
 console.log(Biodata("Nakul", "31", -90));*/
 
 
-let stars = function(length) {
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*let stars = function(length) {
     let lines = "";
     for (let i = 1; i <= length; i++) {
         lines += "* ";
@@ -454,4 +458,156 @@ let traingle = function(height) {
     return print;
 }
 
-console.log(traingle(5));
+console.log(traingle(5));*/
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*var favoriteMovie = function displayFavorite(movieName) {
+    console.log("My favorite movie is " + movieName);
+};
+
+// Function declaration that has two parameters: a function for displaying
+// a message, along with a name of a movie
+function movies(messageFunction, name) {
+    messageFunction(name);
+}
+
+// Call the movies function, pass in the favoriteMovie function and name of movie
+movies(favoriteMovie, "Finding Nemo");*/
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*function movies(messageFunction, name) {
+    messageFunction(name);
+}
+
+// call the movies function, pass in the function and name of movie
+movies(function displayFavorite(movieName) {
+    console.log("My favorite movie is " + movieName);
+}, "Finding Nemo");*/
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Programming Quiz: Laugh (5-4)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `laugh`
+ * - Your code should include an anonymous function expression stored in the variable `laugh`
+ * - Your anonymous function expression should take one argument
+ * - Your anonymous function expression should return the correct number of `hahaha`\'s
+ */
+
+/*let sound = "";
+
+var laugh = function(laughTimes) {
+    for (let i = 0; i < laughTimes; i++) {
+        sound += "ha";
+    }
+    sound += "!";
+    return sound;
+}
+
+console.log(laugh(15));*/
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ * Programming Quiz: Cry (5-5)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `cry`
+ * - Your code should include a named function expression stored in the variable `cry`
+ * - Your code should call the function expression using the variable name, not the function name
+ * - Your function expression should return the expected output
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+
+
+// your code goes here
+
+/*let cry = function crying() {
+    console.log("boohoo!");
+}
+
+cry();*/
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Programming Quiz: Inline Functions (5-6)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an `emotions()` function
+ * - Your code should call the `emotions()` function
+ * - Your `emotions()` function call should have an inline function expression passed as the second parameter
+ * - Your function expression should return the expected output
+ */
+
+
+// your code goes here
+// Call the emotions() function with two arguments
+// Argument 1 - "happy" string
+// Argument 2 - an inline function expression
+
+/*let myFunc = function(hahaTimes) {
+
+    let sound = "";
+    for (let i = 0; i < hahaTimes; i++) {
+        sound += "ha";
+    }
+    return sound += "!";
+}*/
+
+// don't change this code
+// emotions() function definition
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+
+var kilo;
+
+emotions("happy", kilo = function(hahaTimes) {
+
+    let sound = "";
+    for (let i = 0; i < hahaTimes; i++) {
+        sound += "ha";
+    }
+    return sound += "!";
+});
