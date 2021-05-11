@@ -8,3 +8,17 @@ const isOdd= function(num){
 
 console.log("3 is odd: " + isOdd(3));
 console.log("8 is odd: " + isOdd(8));
+
+
+/*const evenOdd = function(num) {
+    let result = "";
+    if (num % 2 === 0)
+        result = "number is even";
+    else
+        result = "number is odd";
+
+    return result;
+}
+
+
+console.log(evenOdd(97));*/
