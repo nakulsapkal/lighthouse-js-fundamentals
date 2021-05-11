@@ -15,7 +15,7 @@ sayHello("Nakul");
 
 
 
-/*const evenOdd = function(num) {
+const evenOdd = function(num) {
     let result = "";
     if (num % 2 === 0)
         result = "number is even";
@@ -26,4 +26,4 @@ sayHello("Nakul");
 }
 
 
-console.log(evenOdd(97));*/
+console.log(evenOdd(97));
