@@ -662,6 +662,13 @@ let total = bills.map(function(bill) {
 console.log(total);*/
 
 
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
  * Programming Quiz: Nested Numbers (6-10)
  * QUIZ REQUIREMENTS
@@ -672,7 +679,7 @@ console.log(total);*/
  */
 
 
-var numbers = [
+/*var numbers = [
     [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
     [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
     [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
@@ -696,4 +703,120 @@ for (let row = 0; row < numbers.length; row++) {
     }
 }
 
-console.log(numbers);
+console.log(numbers);*/
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Programming Quiz: Bank Accounts 1 (7-3)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an object `savingsAccount` 
+ * - Your `savingsAccount` object should have the `balance` and `interestRatePercent` property
+ * - Your `savingsAccount` object should have a `printAccountSummary()` method
+ * - Your `printAccountSummary()` method should return the EXACT expected message
+ * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+ */
+
+
+/*var savingsAccount = {
+    balance: 1000,
+    interestRatePercent: 1,
+    deposit: function addMoney(amount) {
+        if (amount > 0) {
+            savingsAccount.balance += amount;
+        }
+    },
+    withdraw: function removeMoney(amount) {
+        var verifyBalance = savingsAccount.balance - amount;
+        if (amount > 0 && verifyBalance >= 0) {
+            savingsAccount.balance -= amount;
+        }
+    },
+    printAccountSummary: function accountSummary() {
+        console.log("Welcome! Your balance is currently " + balance + " and your interest rate is " + intrestrate + ".");
+    }
+};
+
+console.log(savingsAccount.printAccountSummary());*/
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*Directions:
+Create an object called facebookProfile.The object should have 3 properties:
+
+your name
+the number of friends you have, and
+an array of messages you 've posted (as strings)
+The object should also have 4 methods:
+
+postMessage(message) - adds a new message string to the array
+deleteMessage(index) - removes the message corresponding to the index provided
+addFriend() - increases the friend count by 1
+removeFriend() - decreases the friend count by 1
+Your Code:*/
+/*
+ * Programming Quiz: Facebook Friends (7-5)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an object `facebookProfile`
+ * - The `facebookProfile` object should have the `name` (string), `friends` (number), and `messages` (array of strings) property
+ * - Your `facebookProfile` object should have the `postMessage()`, `deleteMessage()`, `addFriend()` and `removeFriend()` method
+ * - Carefully implement the desired functionality of each method, as decribed above
+ */
+
+
+// TIP - 
+// In an array, 
+
+// your code goes here
+
+
+var facebookProfile = {
+
+    name: "Nakul",
+    numOfFriends: 100,
+    posts: ["hi, how are you all?", 'Hello I\'m new to JS course', 'Hope you all are doing fine in these testing times'],
+    postMessage: function(message) {
+        facebookProfile.posts.push(message);
+        return console.log(facebookProfile.posts);
+    },
+    deleteMessage: function(index) {
+        this.posts.splice(index, 1);
+        return console.log(facebookProfile.posts);
+    },
+    addFriend: function() {
+        facebookProfile.numOfFriends += 1;
+        return console.log(facebookProfile.numOfFriends);
+    },
+    removeFriend: function() {
+        facebookProfile.numOfFriends -= 1;
+        return console.log(facebookProfile.numOfFriends);
+    }
+};
+
+
+
+console.log(facebookProfile.postMessage("Latest Message"));
+console.log(facebookProfile.deleteMessage(0));
+console.log(facebookProfile.addFriend());
+console.log(facebookProfile.removeFriend());
