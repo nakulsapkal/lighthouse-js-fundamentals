@@ -791,7 +791,7 @@ Your Code:*/
 // your code goes here
 
 
-var facebookProfile = {
+/*var facebookProfile = {
 
     name: "Nakul",
     numOfFriends: 100,
@@ -819,4 +819,116 @@ var facebookProfile = {
 console.log(facebookProfile.postMessage("Latest Message"));
 console.log(facebookProfile.deleteMessage(0));
 console.log(facebookProfile.addFriend());
-console.log(facebookProfile.removeFriend());
+console.log(facebookProfile.removeFriend());*/
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*Complete the logic in the function smartGarbage.
+
+Our function will receive two arguments:
+
+The first argument, trash, is a string that will tell our function what type of item is being submitted.
+The second argument, bins, is an object containing three properties (waste, recycling, and compost), which hold some numerical value. Our function must increase the correct value in the bins object, and then return the newly updated object.*/
+
+
+/*const smartGarbage = function(trash, bins) {
+
+    bins.recycling += 1;
+
+    return bins;
+}
+
+console.log(smartGarbage('recycling', { waste: 9, recycling: 8, compost: 3 }));*/
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+
+Complete the logic in the function carPassing.
+
+The function, carPassing(cars, speed), takes in an array of car objects, and the speed of a car as it passes the sensor.
+
+This function should create a new object with a property called speed, and another property called time and add it to the cars array. We can retrieve the current time, for setting the time property, by using the Date.now() function, which is built into JavaScript!
+
+Our function should return an array that includes all of the elements in cars as well as our new element.
+*/
+
+/*const cars = [{
+        time: 1568329654807,
+        speed: 40,
+    },
+    {
+        time: 1568329821632,
+        speed: 42,
+    },
+    {
+        time: 1568331115463,
+        speed: 35
+    }
+]
+
+const speed = 38;
+
+var carPassing = function(cars, speed) {
+
+    let newCar = {
+        time: Date.now(),
+        speed: speed
+    };
+
+    cars.push(newCar);
+
+    return cars
+
+}
+console.log(carPassing(cars, speed));*/
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*Objects - We're Rooting For You!*/
+
+
+const vegetables = [{
+        submitter: 'A',
+        d: 5,
+    },
+    {
+        submitter: 'B',
+        d: 10,
+    },
+    {
+        submitter: 'C',
+        d: 25,
+    }
+]
+metric = 'd'
+var judgeVegetable = function(veggies, metric) {
+    let measure = 0;
+    let name = "";
+    let i = 0;
+
+    for (let i = 0; i < veggies.length; i++) {
+        if (veggies[i][metric] > measure) {
+            measure = veggies[i][metric];
+            name = veggies[i].submitter;
+        }
+    }
+    return name;
+};
+
+console.log(judgeVegetable(vegetables, metric));
